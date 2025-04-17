@@ -1,21 +1,21 @@
 import os
+
 import pandas as pd
 
 
-
-def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> str:
-
+def load_excel(
+    data_frame: pd.DataFrame, output_path: str, file_name: str
+) -> str:
     """
-        Função para receber um DataFrame e salvar em um arquivo excel
+    Função para receber um DataFrame e salvar em um arquivo excel.
 
-        args: 
-            data_frame (pd.DataFrame): DataFrame a ser salvo
-            output_path (str): caminho da pasta de arquivos   
-            file_name (str): nome do arquivo de saída
+    args:
+        data_frame (pd.DataFrame): DataFrame a ser salvo
+        output_path (str): caminho da pasta de arquivos
+        file_name (str): nome do arquivo de saída
 
-        return: str
-    """    
-
+    return: str
+    """
     if not os.path.exists(output_path):
         os.makedirs(output_path)
 

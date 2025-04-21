@@ -1,1 +1,19 @@
-site_name: My Docs
+site_name: Excel Data Merger Project
+theme: 
+  name: material
+  pallet: 
+    primary: red
+  language: pt
+
+  repo_name: "Rafael07/excel-data-merger"
+  repo_url: "https://github.com/Rafael07/excel-data-merger"
+
+  markdown_extensions:
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: language-mermaid
+            
+plugins: 
+  - search
+  - mkdocstrings
